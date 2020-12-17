@@ -1,6 +1,19 @@
 while :
 do
   read bc 
+  read bc 
+  bcl=${#bc}
+  echo $bcl
+  if [[ $bcl -gt 14 ]]
+  then
+	bc=${bc:0:14}
+  fi
+  bcl=${#bc}
+  if [[ $bcl -gt 13 ]]
+  then
+	bc=${bc:1}
+  fi
+  echo $bc
   zpl=1 "^XA"
   zpl=2 "~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR4,4^MD15^LRN^CI0"
   zpl=3 "^MMT"
