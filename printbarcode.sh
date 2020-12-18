@@ -1,6 +1,5 @@
 while :
-do
-  read bc 
+do 
   read bc 
   bcl=${#bc}
   echo $bcl
